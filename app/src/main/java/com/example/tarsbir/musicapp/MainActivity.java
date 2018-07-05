@@ -56,12 +56,12 @@ public class MainActivity extends AppCompatActivity {
 
     private void prepareSongsData() {
         songsList.add(new Song("Blessing","Tarsbir Singh"));
-        songsList.add(new Song("Aunda Sardaar","Jassar "));
+        songsList.add(new Song("Aunda Sardaar", "Jassar"));
         songsList.add(new Song("Bezubaan","DjRock"));
         songsList.add(new Song("College","DjRock"));
         songsList.add(new Song("Dad vs Son","Vattan Sandhu"));
         songsList.add(new Song("Exotic","Priyanka Chopra"));
-        songsList.add(new Song("Feel","Balraj"));
+        songsList.add(new Song("Feel ft Balraj", "Balraj"));
         songsList.add(new Song("Forever","Eminem"));
         songsList.add(new Song("Haal Ve Rabba","Hans Raj Hans"));
         songsList.add(new Song("Same Girl","Arjun"));
