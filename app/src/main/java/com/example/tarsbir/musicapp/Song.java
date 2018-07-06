@@ -4,7 +4,7 @@ public class Song {
     private  String song_name;
     private String artist_name;
 
-    Song(String song_name,String artist_name){
+    Song(String song_name, String artist_name) {
         this.song_name = song_name;
         this.artist_name=artist_name;
     }

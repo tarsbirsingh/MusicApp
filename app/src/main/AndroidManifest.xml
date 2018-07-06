@@ -16,7 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SongPlay" />
+        <activity
+            android:name=".SongPlay"
+            android:label="Playing"
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>

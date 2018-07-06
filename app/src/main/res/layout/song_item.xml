@@ -11,10 +11,12 @@
         android:layout_height="@dimen/five_zero_dp"
       android:layout_marginTop="@dimen/eight_dp"
         android:layout_marginStart="@dimen/five_dp"
-        android:src="@drawable/m_logo2" />
+        android:layout_marginBottom="@dimen/eight_dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/art" />
 
     <TextView
-        android:id="@+id/song_name"
+        android:id="@+id/song_name_textView_ID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -28,11 +30,11 @@
         tools:ignore="RelativeOverlap" />
 
     <TextView
-        android:id="@+id/artist_name"
+        android:id="@+id/artist_name_textView_ID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/song_name"
-        android:layout_below="@+id/song_name"
+        android:layout_alignStart="@+id/song_name_textView_ID"
+        android:layout_below="@+id/song_name_textView_ID"
         android:fontFamily="sans-serif-condensed"
         android:text="@string/artist_name"
         android:textColor="@android:color/black"
@@ -40,13 +42,14 @@
 
 
     <ImageButton
-        android:id="@+id/play_button"
+        android:id="@+id/play_Image_button"
         android:layout_width="@dimen/five_zero_dp"
         android:layout_height="@dimen/five_zero_dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
         android:contentDescription="@string/play_image_button"
         android:scaleType="fitCenter"
+        android:layout_marginBottom="@dimen/eight_dp"
         android:layout_marginTop="@dimen/eight_dp"
         android:layout_marginEnd="@dimen/five_dp"
         android:background="@drawable/play_button" />

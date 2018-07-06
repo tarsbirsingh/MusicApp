@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -15,21 +16,13 @@ import java.util.List;
 public class SongAdapter extends RecyclerView.Adapter<SongAdapter.MyViewHolder> {
     private List<Song> songsList;
 
-    class MyViewHolder extends RecyclerView.ViewHolder {
-        TextView song, artist;
-        ImageButton play;
-
-        MyViewHolder(View view) {
-            super(view);
-            song = view.findViewById(R.id.song_name);
-            artist = view.findViewById(R.id.artist_name);
-            play=view.findViewById(R.id.play_button);
-        }
+    SongAdapter(List<Song> songsList) {
+        this.songsList = songsList;
     }
 
-    SongAdapter(List<Song> songsList)
-    {
-        this.songsList = songsList;
+    @Override
+    public int getItemCount() {
+        return songsList.size();
     }
 
     @NonNull
@@ -47,10 +40,18 @@ public class SongAdapter extends RecyclerView.Adapter<SongAdapter.MyViewHolder> 
         holder.artist.setText(song.getArtist_name());
     }
 
-    @Override
-    public int getItemCount()
-    {
-        return songsList.size();
+    class MyViewHolder extends RecyclerView.ViewHolder {
+        TextView song, artist;
+        ImageButton play;
+        ImageView art;
+
+        MyViewHolder(View view) {
+            super(view);
+            song = view.findViewById(R.id.song_name_textView_ID);
+            artist = view.findViewById(R.id.artist_name_textView_ID);
+            play = view.findViewById(R.id.play_Image_button);
+            art = view.findViewById(R.id.art);
+        }
     }
 
 
