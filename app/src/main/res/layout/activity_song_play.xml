@@ -12,7 +12,7 @@
         android:contentDescription="@string/cover"
         android:layout_height="@dimen/three_six_zero_dp"
         android:scaleType="centerCrop"
-        app:srcCompat="@drawable/art" />
+        app:srcCompat="@mipmap/art" />
 
     <SeekBar
         android:layout_width="match_parent"

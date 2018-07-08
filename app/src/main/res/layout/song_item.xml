@@ -13,7 +13,7 @@
         android:layout_marginStart="@dimen/five_dp"
         android:layout_marginBottom="@dimen/eight_dp"
         android:scaleType="fitXY"
-        android:src="@drawable/art" />
+        android:src="@mipmap/art" />
 
     <TextView
         android:id="@+id/song_name_textView_ID"
