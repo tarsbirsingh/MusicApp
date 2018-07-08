@@ -4,30 +4,22 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class SongPlay extends AppCompatActivity {
+    ImageButton prevButton, nextButton, playButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_song_play);
-
+        idButton();
         intentCall();
-    }
 
-
-    public void play(View view) {
-
-        Toast.makeText(this, "Song play", Toast.LENGTH_SHORT).show();
-    }
-
-    public void prev(View view) {
-        Toast.makeText(this, "previous Song ", Toast.LENGTH_SHORT).show();
-    }
-
-    public void next(View view) {
-        Toast.makeText(this, "Next Song", Toast.LENGTH_SHORT).show();
+        prevButton.setOnClickListener((View v) -> Toast.makeText(getApplicationContext(), "previous Song ", Toast.LENGTH_SHORT).show());
+        playButton.setOnClickListener((View v) -> Toast.makeText(getApplicationContext(), "Play Song ", Toast.LENGTH_SHORT).show());
+        nextButton.setOnClickListener((View v) -> Toast.makeText(getApplicationContext(), "next Song ", Toast.LENGTH_SHORT).show());
     }
 
     public void intentCall() {
@@ -36,5 +28,11 @@ public class SongPlay extends AppCompatActivity {
         TextView artist_name = findViewById(R.id.artist_name_display);
         song_name.setText(in.getStringExtra("SONG_NAME"));
         artist_name.setText(in.getStringExtra("ARTIST_NAME"));
+    }
+
+    public void idButton() {
+        prevButton = findViewById(R.id.prev_image_button);
+        nextButton = findViewById(R.id.next_image_button);
+        playButton = findViewById(R.id.play_Image_button);
     }
 }

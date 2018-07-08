@@ -47,32 +47,32 @@
         android:layout_marginTop="@dimen/three_zero_dp">
 
         <ImageButton
+            android:id="@+id/prev_image_button"
             android:layout_width="@dimen/zero_dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@color/back"
             android:contentDescription="@string/prev"
-            android:onClick="prev"
             android:scaleType="fitCenter"
             android:src="@drawable/pre6" />
 
         <ImageButton
+            android:id="@+id/play_Image_button"
             android:layout_width="@dimen/zero_dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@color/back"
             android:contentDescription="@string/current_play"
-            android:onClick="play"
             android:scaleType="fitCenter"
             android:src="@drawable/play6" />
 
         <ImageButton
+            android:id="@+id/next_image_button"
             android:layout_width="@dimen/zero_dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@color/back"
             android:contentDescription="@string/next"
-            android:onClick="next"
             android:scaleType="fitCenter"
             android:src="@drawable/next6" />
     </LinearLayout>
